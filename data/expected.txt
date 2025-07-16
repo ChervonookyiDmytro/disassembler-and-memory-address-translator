@@ -1,0 +1,26 @@
+1A 12:
+MOV R1, R2
+
+1B 11 00 00 00 42:
+MOV [0x00000842], R1
+
+0C 01 12:
+SUB R1, R1, R2
+
+0D 12 00 00 54 32:
+ERROR: Page 10 not found for address [0x5432]
+
+21 01 23:
+MUL R1, R2, R3
+
+23 12 00 00 AF A9:
+ERROR: Page 21 is not present in memory for address [0xAFA9]
+
+80 34:
+CMP R3, R4
+
+1C 01 33:
+MOV R1, 51
+
+1C 14 45 98:
+MOV R4, 17816
